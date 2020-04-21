@@ -282,7 +282,7 @@ var items = [
 [["filler-onenounsgagreementanimright",86],DS, {s:"Pisica năzdrăvană sparge vase tot timpul."}],
 [["filler-onenounsgagreementanimright",90],DS, {s:"Iepurele alb sare cu mare agilitate."}],
 [["filler-onenounsgagreementnonanimright",87],DS, {s:"Caietul negru are pagini albe."}],
-[["filler-onenounsgagreementnonanimright",88],DS, {s:"Magnetul maro atrage metale adesea."}],
+[["filler-onenounsgagreementnonanimright",88],DS, {s:"Magnetul maro atrage metale adesea."}],,"QuestionAlt", {q: "Who found the treasure?", as: ["The pirate","Some people"]}],
 [["filler-onenounsgagreementnonanimright",89],DS, {s:"Pixul albastru scrie foarte bine."}],
  [["filler-onenounsgagreementanimwrong",91],DS, {s:"Studentul harnic muncesc foarte mult."}],
 [["filler-onenounsgagreementanimwrong",92],DS, {s:"Femeia misterioasă dispar în străinătate adesea."}],
