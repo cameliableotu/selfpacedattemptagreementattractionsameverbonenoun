@@ -25,18 +25,19 @@ var completionErrorMessage = "Eroare în trimiterea răspunsurilor dumneavoastr�
 
 // Controller settings.
 // Parameter settings taken from Staub 2009
+
 var defaults = [
-    DS, {q: 'Este această propoziţie gramaticală?',
-        as: [['f','Da'],['j','Nu']],
-        randomOrder: false,
-        presentHorizontally: true,
-        mode: 'speeded acceptability',
-        display: 'in place',
-        blankText: '+',
-        wordTime: 250,
-        wordPauseTime: 125,
-        timeout: 2000}
+    "QuestionAlt", {
+        hasCorrect: 0,
+        randomOrder: ['f','j'],
+        presentHorizontally: true
+},
+"EPDashedSentence", {
+    mode: 'self-paced reading',
+    display: 'in place'
+}
 ];
+
 // Add breaks every 24 items
 function modifyRunningOrder(ro)
 {
@@ -61,8 +62,7 @@ function modifyRunningOrder(ro)
 
 // Items array.
 var items = [
-["timeoutSep", Separator, { transfer: 1500, normalMessage: "", errorMessage: "Timed out. Vă rugăm să răspundeți mai rapid."}],
-
+["timeoutSep", Separator, { transfer: 1500, normalMessage: "", errorMessage: "Timed out. Vă rugăm să citiți cu atenție."}],
 ["consent", "Form", {consentRequired: true, html: {include: "consent.html"}}],
  ["setcounter", "__SetCounter__", { }],
 ["intro", "Form", {consentRequired: true, html: {include: "intro.html"}}],
@@ -80,9 +80,9 @@ var items = [
 
 ['shared-intro', Message, {consentRequired: false,
                    html: ["div",
-                           ["p", "Hai să exersăm un pic înainte de a începe efectiv. Nu există răspunsuri corecte sau greşite. Vorbitori diferiţi au intuiţii diferite privind anumite propoziţii. "]
+                           ["p", "Hai să exersăm un pic înainte de a începe efectiv. "]
                          ]}],
-['shared-intro', Separator, { transfer: 1000, normalMessage: "+", errorMessage: "Timed out. Vă rugăm să răspundeți mai rapid."}, DS, {s: "Acele pisici sforăiau foarte tare."}],
+['shared-intro', Separator, { transfer: 1000, normalMessage: "+", errorMessage: "Răspuns greşit. Vă rugăm să citiți cu atenție."}, DS, {s: "Acele pisici sforăiau foarte tare."}],
 
 ['shared-intro', Message, {consentRequired: false,
                    html: ["div",
@@ -90,10 +90,10 @@ var items = [
                            ["p", "Multor vorbitori nativi de limba română li se pare o propoziţie gramaticală. Hai să mai exersăm un pic."],
                          ]}],
 
-['shared-intro', Separator, { transfer: 1000, normalMessage: "+", errorMessage: "Timed out. Vă rugăm să răspundeți mai rapid."}, DS, {s: "La bal, prinţul valsat domol a vorbit de planurile lui de viitor."}],
-['shared-intro', Separator, { transfer: 1000, normalMessage: "+", errorMessage: "Timed out. Vă rugăm să răspundeți mai rapid."}, DS, {s: "Iepurii au mieunat mult aseară."}],
-['shared-intro', Separator, { transfer: 1000, normalMessage: "+", errorMessage: "Timed out. Vă rugăm să răspundeți mai rapid."}, DS, {s: "Miruna am stat toată noaptea cu griji pentru fiul ei."}],
-['shared-intro', Separator, { transfer: 1000, normalMessage: "+", errorMessage: "Timed out. Vă rugăm să răspundeți mai rapid."}, DS, {s: "Barista a pregătit un latte fără niciun chef şi nici măcar nu a făcut vreun design."}],
+['shared-intro', Separator, { transfer: 1500, normalMessage: "+", errorMessage: "Răspuns greşit. Vă rugăm să citiți cu atenție."}, DS, {s: "La bal, prinţul valsat domol a vorbit de planurile lui de viitor."}],
+['shared-intro', Separator, { transfer: 1500, normalMessage: "+", errorMessage: "Răspuns greşit. Vă rugăm să citiți cu atenție."}, DS, {s: "Iepurii au mieunat mult aseară."}],
+['shared-intro', Separator, { transfer: 1500, normalMessage: "+", errorMessage: "Răspuns greşit. Vă rugăm să citiți cu atenție."}, DS, {s: "Miruna am stat toată noaptea cu griji pentru fiul ei."}],
+['shared-intro', Separator, { transfer: 1500, normalMessage: "+", errorMessage: "Răspuns greşit. Vă rugăm să citiți cu atenție."}, DS, {s: "Barista a pregătit un latte fără niciun chef şi nici măcar nu a făcut vreun design."}],
 ['shared-intro', Message, {consentRequired: false,
                    html: ["div",
                            ["p", "Bun, gata cu exersatul! Apăsaţi orice tastă când sunteţi gata să începeţi."]
@@ -104,8 +104,8 @@ var items = [
 
 //// Shared experimental items + fillers
 //// 
- [["ATTRAGREEROMANIAN-matchheadsg",1],DS, {s:" Cartea de lângă femeie mereu au un farmec aparte." },"QuestionAlt", {q: "Cine/ Ce are un farmec aparte?", as: ["Cartea","Femeia"]}],
- [["ATTRAGREEROMANIAN-mismatchheadsg",1],DS, {s:" Cartea de lângă femei mereu au un farmec aparte."}, "QuestionAlt", {q: "Cine/ Ce are un farmec aparte?", as: ["Cartea","Femeile"]}],
+[["ATTRAGREEROMANIAN-matchheadsg",1],DS, {s:" Cartea de lângă femeie mereu au un farmec aparte." },"QuestionAlt", {q: "Cine/ Ce are un farmec aparte?", as: ["Cartea","Femeia"]}],
+[["ATTRAGREEROMANIAN-mismatchheadsg",1],DS, {s:" Cartea de lângă femei mereu au un farmec aparte."}, "QuestionAlt", {q: "Cine/ Ce are un farmec aparte?", as: ["Cartea","Femeile"]}],
 [["ATTRAGREEROMANIAN-matchheadpl",1],DS, {s:"Cărţile de lângă femei mereu au un farmec aparte."}, "QuestionAlt", {q: "Cine/ Ce are un farmec aparte?", as: ["Cărţile","Femeile"]}],
 [["ATTRAGREEROMANIAN-mismatchheadpl",1],DS, {s:" Cărţile de lângă femeie mereu au un farmec aparte."}, "QuestionAlt", {q: "Cine/ Ce are un farmec aparte?", as: ["Cărţile","Femeile"]}],
 [["ATTRAGREEROMANIAN-matchheadsg",2],DS, {s:"Vioara de lângă cântăreaţă mereu au arcuş maro deschis."} ,"QuestionAlt", {q: "Cine/ce are arcuș maro deschis?", as: ["Vioara","Cântăreața"]}],
