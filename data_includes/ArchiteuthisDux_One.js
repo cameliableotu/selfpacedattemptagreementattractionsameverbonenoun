@@ -213,18 +213,21 @@ var items = [
 
 
 //// Fillers
-[["filler-twonounspluralcorrectchoiceplanim",25],DS, {s:"Fata pe care domnii o iubesc este frumoasă."}],
-[["filler-twonounspluralcorrectchoiceplanim",26],DS, {s:"Pinguinul pe care copiii îl privesc este Apolodor."}],
-[["filler-twonounspluralcorrectchoiceplanim",27],DS, {s:"Pisica pe care băieţii o lovesc este birmaneză. "}],
-[["filler-twonounspluralcorrectchoicesganim",28],DS, {s:"Veveriţa pe care bărbaţii o prinde este maro. "}],
-[["filler-twonounspluralcorrectchoicesganim",29],DS, {s:"Câinele pe care doctorii îl hrăneşte este bolnav."}],
-[["filler-twonounspluralcorrectchoicesganim",30],DS, {s:"Omul pe care animalele îl îndrăgeşte este blând. "}],
-[["filler-twonounspluralcorrectchoiceplnonanim",31],DS, {s:"Cartea pe care fetele o citesc este interesantă. "}],
- [["filler-twonounspluralcorrectchoiceplnonanim",32],DS, {s:"Lumina pe care oamenii o văd este verde. "}],
-[["filler-twonounspluralcorrectchoiceplnonanim",33],DS, {s:"Casa pe care contabilii o construiesc este imensă. "}],
-[["filler-twonounspluralcorrectchoicesgnonanim",34],DS, {s:"Mingea pe care sportivii o alege este mare. "}],
-[["filler-twonounspluralcorrectchoicesgnonanim",35],DS, {s:"Vinul pe care bucătarii îl bea este roşu."}],
- [["filler-twonounspluralcorrectchoicesgnonanim",36], DS, {s:"Poemul pe care tinerii îl spune este emoţionant."}],
+[["filler-twonounspluralcorrectchoice",25],DS, {s:"Fata pe care domnii o iubesc este frumoasă."}],
+[["filler-twonounspluralcorrectchoice",26],DS, {s:"Cartea pe care fetele o citesc este interesantă. "}],
+[["filler-twonounspluralcorrectchoice",27],DS, {s:"Pinguinul pe care copiii îl privesc este Apolodor."}],
+[["filler-twonounspluralcorrectchoice",28],DS, {s:"Pisica pe care băieţii o lovesc este birmaneză. "}],
+[["filler-twonounspluralcorrectchoice",29],DS, {s:"Veveriţa pe care bărbaţii o prind este maro. "}],
+[["filler-twonounspluralcorrectchoice",30],DS, {s:"Lumina pe care oamenii o văd este verde. "}],
+ [["filler-twonounspluralcorrectchoice",31],DS, {s:"Casa pe care contabilii o construiesc este imensă. "}],
+[["filler-twonounspluralcorrectchoice",32],DS, {s:"Mingea pe care sportivii o aleg este mare. "}],
+[["filler-twonounspluralcorrectchoice",33],DS, {s:"Vinul pe care bucătarii îl beau este roşu."}],
+[["filler-twonounspluralcorrectchoice",34],DS, {s:"Câinele pe care doctorii îl hrănesc este bolnav."}],
+[["filler-twonounspluralcorrectchoice",35], DS, {s:"Poemul pe care tinerii îl spun este emoţionant."}],
+[["filler-twonounspluralcorrectchoice",36],DS, {s:"Omul pe care animalele îl îndrăgesc este blând. "}],
+[["filler-twonounspluralcorrectchoice",35],DS, {s:"Vinul pe care bucătarii îl beau este roşu."}],
+[["filler-twonounspluralcorrectchoice",36], DS, {s:"Poemul pe care tinerii îl spun este emoţionant."}],
+
 
 [["filler-twonounssingularcorrectchoiceplanim",37],DS, {s:"Girafele pe care copilul le privesc sunt înalte."}],
 [["filler-twonounssingularcorrectchoiceplanim",38],DS, {s:"Motanii pe care bunicul îi adăpostesc sunt tigraţi."}],
