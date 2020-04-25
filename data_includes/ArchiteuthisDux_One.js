@@ -284,7 +284,7 @@ var items = [
 
 
 [["filler-onenounsgagreement",85],DS, {s:"Fata şatenă se ascunde de prieteni adesea."}, "QuestionAlt", {q: "Cine se ascunde de prieteni adesea.?", as: ["Fata şatenă","Fata blondă"]}],
-[["filler-onenounsgagreement",86],DS, {s:"Pisica năzdrăvană sparge vase tot timpul."},"QuestionAlt", {q: "Cine sparge vase tot timpul?", as: ["Pisica năzdrăvană","Pisica...."]}],
+[["filler-onenounsgagreement",86],DS, {s:"Pisica năzdrăvană sparge vase tot timpul."},"QuestionAlt", {q: "Cine sparge vase tot timpul?", as: ["Pisica năzdrăvană","Pisica simpatică"]}],
 [["filler-onenounsgagreement",87],DS, {s:"Caietul negru are pagini albe."},"QuestionAlt", {q: "Ce pagini are caietul negru?", as: ["Albe","Galbene"]}],
 [["filler-onenounsgagreement",88],DS, {s:"Magnetul maro atrage metale adesea."},"QuestionAlt", {q: "Ce atrage magnetul maro adesea?", as: ["Metale","Galbene"]}],
 [["filler-onenounsgagreement",89],DS, {s:"Pixul albastru scrie foarte bine."},"QuestionAlt", {q: "Cum scrie pixul albastru?", as: ["Foarte bine","Foarte prost"]}],
