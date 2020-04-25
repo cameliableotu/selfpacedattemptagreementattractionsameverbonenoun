@@ -257,7 +257,7 @@ var items = [
  [["filler-semanticchoice",62],DS, {s:"Fetiţa de lângă camera albastră dansează."},"QuestionAlt", {q: "Cine/ce dansează?", as: ["Fetiţa","Camera albastră"]}],
 [["filler-semanticchoice",63],DS, {s:"Iepuraşul de lângă scaunul roşu doarme."},"QuestionAlt", {q: "Cine/ce doarme?", as: ["Iepuraşul","Scaunul roşu"]}],
 [["filler-semanticchoice",64],DS, {s:"Pasărea de lângă masa neagră cântă bine."},"QuestionAlt", {q: "Cine/ce cântă bine?", as: ["Pasărea","Masa neagră"]}],
-[["filler-semanticchoice",65,DS, {s:"Măgarul de lângă căţelul maro rage adesea. "},"QuestionAlt", {q: "Cine rage adesea?", as: ["Măgarul","Căţelul maro"]}],
+[["filler-semanticchoice",65],DS, {s:"Măgarul de lângă căţelul maro rage adesea. "},"QuestionAlt", {q: "Cine rage adesea?", as: ["Măgarul","Căţelul maro"]}],
 [["filler-semanticchoice",66],DS, {s:"Papucii de lângă copiii bolnavi alunecă uşor."},"QuestionAlt", {q: "Cine/ce alunecă uşor?", as: ["Papucii","Copiii bolnavi"]}],
 [["filler-semanticchoice",67],DS, {s:"Hainele de lângă femeile zâmbăreţe cad mereu."},"QuestionAlt", {q: "Cine/ce cad mereu?", as: ["Hainele","Femeile zâmbăreţe"]}],
  [["filler-semanticchoice",68],DS, {s:"Albinele de lângă portocalele stricate bȃzȃie prea tare."},"QuestionAlt", {q: "Cine/ce bȃzȃie prea tare?", as: ["Albinele","Portocalele stricate"]}],
