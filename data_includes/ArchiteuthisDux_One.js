@@ -1,6 +1,6 @@
 // Agreement Attraction in Romanian (simple version without adjectives)
 // Do show progress bar (fine! I give in)
-
+var counterOverride = 0;
 var showProgressBar = true;
 
 // Main shuffleSequence definition
@@ -53,7 +53,7 @@ function modifyRunningOrder(ro)
             true));
             ro[i].push(new DynamicElement(
                 "Separator",
-                {transfer: 2500, normalMessage: "Atenţie! Primul fragment de propoziţie din acest set va apărea pe ecran în curând."},
+                {transfer: 4000, normalMessage: "Atenţie! Primul fragment de propoziţie din acest set va apărea pe ecran în curând."},
             true));
         }
     }
@@ -62,7 +62,6 @@ function modifyRunningOrder(ro)
 
 // Items array.
 var items = [
-["timeoutSep", Separator, { transfer: 1500, normalMessage: "", errorMessage: "Răspuns greşit.Vă rugăm să citiți cu atenție."}],
 ["consent", "Form", {consentRequired: true, html: {include: "consent.html"}}],
  ["setcounter", "__SetCounter__", { }],
 ["intro", "Form", {consentRequired: true, html: {include: "intro.html"}}],
@@ -100,7 +99,7 @@ var items = [
                         ]}],
 
 ['shared-intro',Separator,{transfer: 4000, normalMessage: "Atenţie! Prima propoziţie din acest set va apărea pe ecran în curând."}],
-
+["timeoutSep", Separator, { transfer: 1500, normalMessage: "", errorMessage: "Răspuns greşit.Vă rugăm să citiți cu atenție."}],
 
 //// Shared experimental items + fillers
 //// 
