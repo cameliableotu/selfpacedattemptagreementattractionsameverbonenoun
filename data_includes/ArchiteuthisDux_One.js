@@ -62,7 +62,7 @@ function modifyRunningOrder(ro)
 
 // Items array.
 var items = [
-["timeoutSep", Separator, { transfer: 1500, normalMessage: "", errorMessage: "Timed out. Vă rugăm să citiți cu atenție."}],
+["timeoutSep", Separator, { transfer: 1500, normalMessage: "", errorMessage: "Răspuns greşit.Vă rugăm să citiți cu atenție."}],
 ["consent", "Form", {consentRequired: true, html: {include: "consent.html"}}],
  ["setcounter", "__SetCounter__", { }],
 ["intro", "Form", {consentRequired: true, html: {include: "intro.html"}}],
@@ -99,7 +99,7 @@ var items = [
                            ["p", "Bun, gata cu exersatul! Apăsaţi orice tastă când sunteţi gata să începeţi."]
                         ]}],
 
-['shared-intro',"Separator",{transfer: 4000, normalMessage: "Atenţie! Prima propoziţie din acest set va apărea pe ecran în curând."}],
+['shared-intro',Separator,{transfer: 4000, normalMessage: "Atenţie! Prima propoziţie din acest set va apărea pe ecran în curând."}],
 
 
 //// Shared experimental items + fillers
